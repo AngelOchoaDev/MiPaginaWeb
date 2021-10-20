@@ -1,0 +1,64 @@
+body
+{
+    color:black;
+    background-color:gainsboro;
+}
+
+h1
+{
+    color:chocolate;
+}
+
+#Subtitulo_1
+{
+    color: darkgreen;
+}
+
+.center
+{
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+p
+{
+    text-align: center;
+}
+
+#Parrafo_1
+{
+    font-style: italic;
+}
+
+#Parrafo_2
+{
+    font-weight: bold;
+}
+
+#Imagen_1
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 8px;
+    border:0cm;
+}
+
+#Parrafo_3
+{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 24px;
+}
+
+#Video
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 8px;
+}
