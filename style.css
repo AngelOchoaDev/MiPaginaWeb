@@ -6,7 +6,7 @@ body
 
 h1
 {
-    color:chocolate;
+    color:cornflowerblue;
 }
 
 #Subtitulo_1
@@ -61,4 +61,94 @@ p
     margin-right: auto;
     width: 50%;
     border-radius: 8px;
+}
+
+.espacio
+{
+    width: 300px;
+    height: 300px;
+    margin:  auto auto auto auto;
+    position: relative;
+    perspective-origin: center -50%;
+    perspective: 800px;
+    transform: scale(0.50);
+}
+
+@keyframes rotacion_cubo
+{
+    from{transform: rotateY(-30deg);}
+    to{transform: rotateY(-390deg);}
+}
+
+@keyframes cambio_textura
+{
+    0% {background-image: url("cubo_1.jpg");}
+    24% {background-image: url("cubo_1.jpg");}
+
+    25% {background-image: url("cubo_2.jpg");}
+    49% {background-image: url("cubo_2.jpg");}
+
+    50% {background-image: url("cubo_3.JPG");}
+    74% {background-image: url("cubo_3.JPG");}
+
+    75% {background-image: url("cubo_4.jpg");}
+    99% {background-image: url("cubo_4.jpg");}
+
+    100% {background-image: url("cubo_1.jpg");}
+}
+
+.cubo
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: translateZ(-150px);
+    transform: rotateY(-30deg);
+    animation-name: rotacion_cubo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.cara
+{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(17, 29, 83, 0.185);
+    animation-name: cambio_textura;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.c1
+{
+    transform: translateZ(150px);
+}
+
+.c2
+{
+    transform: rotateY(180deg) translateZ(150px);
+}
+
+.c3
+{
+    transform: rotateY(-90deg) translateZ(150px);
+}
+
+.c4
+{
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.c5
+{
+    transform: rotateX(-90deg) translateZ(150px);
+}
+
+.c6
+{
+    transform: rotateX(90deg) translateZ(150px);
 }
